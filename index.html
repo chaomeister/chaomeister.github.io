@@ -1,49 +1,236 @@
 <!DOCTYPE html>
 <html>
-<style type="text/css">
-	
-	#website-title{
-		text-align: center;
-		font-size: 50px;
-	}
-	.subtitles{
-		text-align: left;
-		font-size: 30px;
-	}
-	/*@media only screen and (min-width: 768px){
-		#website-title{
-			color: red;
-		}
-	}*/
-	
-</style>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 	<link rel="stylesheet" href="Assets/bootstrap.min.css">
 	<script src="Assets/jquery-3.1.1.min.js"></script>
 	<script src="Assets/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Assets/custom.css">
 
 	<title>Jonathan E. Chao</title>
 </head>
 <body>
-	<h3 id="website-title" onclick="alertTitle();">Jonathan E. Chao</h3>
-	<h3 class="subtitles">Myself</h3>
-	<div class="row">
-		<div class="col-sm-2"></div><div class="col-sm-4">TEMP</div><div class="col-sm-4">TEMP</div><div class="col-sm-2"></div>
-	</div>
-	<h3 class="subtitles">Experience</h3>
-	<div class="row">
-		<div class="col-sm-2"></div><div class="col-sm-4">TEMP</div><div class="col-sm-4">TEMP</div><div class="col-sm-2"></div>
-	</div>
-	<h3 class="subtitles">Skills</h3>
-	<div class="row">
-		<div class="col-sm-2"></div><div class="col-sm-4">TEMP</div><div class="col-sm-4">TEMP</div><div class="col-sm-2"></div>
-	</div>
-	<h3 class="subtitles">Contact Info</h3>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Jonathan</a>
+	    </div>
 
-	<div class="row" id="test-row">
-		<div class="col-sm-6">test</div><div class="col-sm-6">test</div>
-		
-	</div>
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="#myself">Myself</a></li>
+	        <li><a href="#education">Education</a></li>
+	        <li><a href="#experience">Work Experience</a></li>
+	        <li><a href="#projects">Projects</a></li>
+	        <li><a href="#skills">Skills</a></li>
+	        <li><a href="#contact">Contact</a></li>
+	      </ul>
+	      
+	      
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<h3 id="website-title">Jonathan E. Chao</h3>
+
+	<br>
+	<section id="myself">
+		<h2  class="subtitles">Myself</h2>
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10 subtext">Greetings. I'm Jonathan Chao, a computer science undergraduate student at Rutgers University.</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<br>
+	</section>
+
+	<section id="education">
+		<h2 class="subtitles">Education</h2>
+		<div class="row">
+			<div class="col-sm-2"></div>
+				<div class="col-sm-4 subtext"><img class="image-size point" src="static/images/ru.png" onclick="$('#rutgersModal').modal('show');"><br>Rutgers University</div>
+			<div class="col-sm-4 subtext"><img class="image-size point" src="static/images/bca.png" onclick="$('#bcaModal').modal('show');"><br>Bergen County Academies</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<br>
+		<!-- Rutgers Modal -->
+		<div id="rutgersModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		      	<button type="button" class="close" data-dismiss="modal">&times;</button>
+		      	<h4 class="modal-title">Rutgers University, School of Arts and Sciences</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>
+		        New Brunswick, NJ
+		        <br>
+				Class of 2019
+				<br>
+				Relevant Coursework
+				<br>
+				<ul>
+					<li>Intro to Computer Science</li>
+					<li>Data Structures</li>
+					<li>Computer Architecture</li>
+					<li>Intro to Discrete Structures</li>
+				</ul>
+		        </p>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+
+		<!-- BCA Modal -->
+		<div id="bcaModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		      	<button type="button" class="close" data-dismiss="modal">&times;</button>
+		      	<h4 class="modal-title">Bergen County Academies, Academy for Visual and Performing Arts - Music Concentration</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>
+		        Hackensack, NJ
+		        <br>
+				Class of 2015
+		        </p>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+
+	</section>
+
+	<section id="experience">
+		<h2  class="subtitles">Work Experience</h2>
+		<div class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-4 subtext">
+				<img class="image-size point" src="static/images/ylsymbol.png" onclick="$('#ylModal').modal('show');"><br>Young Life</div>
+			<div class="col-sm-4 subtext">
+				<img class="image-size point" src="static/images/felicianlogo.jpg" onclick="$('#felicianModal').modal('show');"><br>Felician School for Exceptional Children</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<br>
+
+		<!-- YL Modal -->
+		<div id="ylModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		      	<button type="button" class="close" data-dismiss="modal">&times;</button>
+		      	<h4 class="modal-title">Young Life Student Staff</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>
+		        Intern at a non-profit organization
+		        <br>
+		        Responsible for organizing small/large scale community service trips and social events 
+		  		<br>
+		  		Check us out
+		  		<a href="https://asian.younglife.org/Pages/default.aspx">here</a>
+		        </p>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+
+		<!-- Felician Modal -->
+		<div id="felicianModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		      	<button type="button" class="close" data-dismiss="modal">&times;</button>
+		      	<h4 class="modal-title">Music Therapy Intern</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>
+		        Felician College, Lodi, NJ
+		        <br>
+				Worked under certified music therapist Mrs. Barbara Giaquinto in playing instruments and helping with various tasks
+		        </p>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+	</section>
+
+	<section id="projects">
+		<h2 class="subtitles">Projects</h2>
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4 subtext"><img class="image-size point" src="static/images/rehearse.png" onclick="$('#rehearseModal').modal('show');"><br>Rehearse With Friends</div>
+			<div class="col-sm-4"></div>
+		</div>
+		<br>
+
+		<!-- Rehearse Modal -->
+		<div id="rehearseModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		      	<button type="button" class="close" data-dismiss="modal">&times;</button>
+		      	<h4 class="modal-title">Rehearse With Friends Web App</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>
+		        <img class="modal-image-size" src="static/images/rehearse.png">
+		        <br>
+		        Application created to promote practicing in groups by saving information inputted by the user in a database and displaying it for the public to see. 
+		        <br>
+		        <br>
+				Technologies used: Python, Flask, MongoDB, Heroku
+				<br>
+				Check it out
+				<a href="http://rehearsewithfriends.herokuapp.com">here</a>
+		        </p>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+	</section>
+
+	<section id="skills">
+		<h2 class="subtitles">Skills</h2>
+		<div class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-4 subtext">Languages: Java, C, HTML, CSS, Python, Javascript</div><div class="col-sm-4 subtext">Technologies: JQuery, Flask, MongoDB (using PyMongo), Jinja, Git</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<br>
+
+	</section>
+
+	<section id="contact">
+		<h2 class="subtitles">Contact</h2>
+
+		<div class="row" id="test-row">
+			<div class="col-sm-5"></div>
+			<div class="col-sm-2 subtext"><a href="static/resume.pdf">Resume</a>
+			</div><div class="col-sm-5"></div>
+			
+		</div>
+		<br>
+	</section>
+	
 </body>
 </html>

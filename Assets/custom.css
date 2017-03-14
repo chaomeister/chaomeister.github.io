@@ -1,0 +1,31 @@
+#website-title{
+	text-align: center;
+	font-size: 50px;
+}
+.subtitles{
+	text-align: center;
+	f
+	font-size: 30px;
+}
+.subtext{
+	text-align: center;
+	font-size: 20px;
+}
+.image-caption{
+	text-align: center;
+	font-size: 30px;
+}
+.image-size{
+	width: 175px;
+}
+.modal-image-size{
+	width: 550px;
+}
+.point{
+	cursor: pointer;
+}
+/*@media only screen and (min-width: 768px){
+	#website-title{
+		color: red;
+	}
+}*/
