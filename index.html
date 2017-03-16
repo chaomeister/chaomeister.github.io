@@ -11,11 +11,11 @@
 	<title>Jonathan E. Chao</title>
 </head>
 <body>
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
@@ -25,7 +25,7 @@
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <div class="collapse navbar-collapse" id="navbar-main">
 	      <ul class="nav navbar-nav">
 	        <li><a href="#myself">Myself</a></li>
 	        <li><a href="#education">Education</a></li>
@@ -39,20 +39,23 @@
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
-	<h3 id="website-title">Jonathan E. Chao</h3>
-
+	<div class="intro">
+		<h1 class="center no-margin" style="padding: 15%">Jonathan E. Chao</h1>
+	</div>
+	
 	<br>
 	<section id="myself">
+	<br>
 		<h2  class="subtitles">Myself</h2>
 		<div class="row">
 			<div class="col-sm-1"></div>
 			<div class="col-sm-10 subtext">Greetings. I'm Jonathan Chao, a computer science undergraduate student at Rutgers University.</div>
 			<div class="col-sm-2"></div>
 		</div>
-		<br>
 	</section>
 
 	<section id="education">
+	<br>
 		<h2 class="subtitles">Education</h2>
 		<div class="row">
 			<div class="col-sm-2"></div>
@@ -61,7 +64,6 @@
 			<div class="col-sm-2 subtext"><img class="image-size point" src="static/images/msm.jpg" onclick="$('#msmModal').modal('show');"><br>Manhattan School of Music</div>
 			<div class="col-sm-2"></div>
 		</div>
-		<br>
 		<!-- Rutgers Modal -->
 		<div id="rutgersModal" class="modal fade" role="dialog">
 		  <div class="modal-dialog">
@@ -144,6 +146,7 @@
 	</section>
 
 	<section id="experience">
+	<br>
 		<h2  class="subtitles">Work Experience</h2>
 		<div class="row">
 			<div class="col-sm-2"></div>
@@ -153,7 +156,6 @@
 				<img class="image-size point" src="static/images/felicianlogo.jpg" onclick="$('#felicianModal').modal('show');"><br>Felician School for Exceptional Children</div>
 			<div class="col-sm-2"></div>
 		</div>
-		<br>
 
 		<!-- YL Modal -->
 		<div id="ylModal" class="modal fade" role="dialog">
@@ -194,7 +196,9 @@
 		        <p>
 		        <img class="modal-image-size" src="static/images/musicinternship.JPG">
 		        <br>
-		        Felician College, Lodi, NJ
+		        Felician University
+		        <br>
+		        Lodi, NJ
 		        <br>
 				Worked under certified music therapist Mrs. Barbara Giaquinto in playing instruments and helping with various tasks
 		        </p>
@@ -206,13 +210,13 @@
 	</section>
 
 	<section id="projects">
+	<br>
 		<h2 class="subtitles">Projects</h2>
 		<div class="row">
 			<div class="col-sm-4"></div>
 			<div class="col-sm-4 subtext"><img class="image-size point" src="static/images/rehearse.png" onclick="$('#rehearseModal').modal('show');"><br>Rehearse With Friends</div>
 			<div class="col-sm-4"></div>
 		</div>
-		<br>
 
 		<!-- Rehearse Modal -->
 		<div id="rehearseModal" class="modal fade" role="dialog">

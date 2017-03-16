@@ -1,6 +1,17 @@
-#website-title{
+.center{
 	text-align: center;
-	font-size: 50px;
+	font-size: 80px;
+}
+.intro{
+	background: url("../static/images/background.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	color: white;
+	opacity: 0.9;
+	height: 100vh;
+}
+.no-margin{
+	margin-bottom: : 0;
 }
 .subtitles{
 	text-align: center;
@@ -21,11 +32,7 @@
 .modal-image-size{
 	width: 550px;
 }
-.point{
+.point:hover{
 	cursor: pointer;
+	opacity: 0.7;
 }
-/*@media only screen and (min-width: 768px){
-	#website-title{
-		color: red;
-	}
-}*/
